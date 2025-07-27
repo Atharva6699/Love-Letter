@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Love Letter to You</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe0ec, #fff5f9);
+      font-family: 'Pacifico', cursive;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    button {
+      margin-top: 100px;
+      padding: 15px 40px;
+      font-size: 20px;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 64, 129, 0.4);
+      transition: 0.4s;
+      z-index: 2;
+      position: relative;
+    }
+
+    button:hover {
+      background-color: #e91e63;
+      transform: scale(1.1);
+    }
+
+    .container {
+      display: none;
+      padding: 30px;
+      max-width: 700px;
+      background: #fff0f7;
+      margin: 50px auto;
+      border-radius: 25px;
+      box-shadow: 0 0 20px pink;
+      animation: fadeIn 2s ease-in-out;
+      position: relative;
+      z-index: 2;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    h1 {
+      color: #e60073;
+      font-size: 2.7em;
+    }
+
+    p {
+      font-size: 20px;
+      color: #444;
+      line-height: 1.8;
+    }
+
+    img {
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #f99;
+      margin-top: 25px;
+    }
+
+    /* Hearts Animation */
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 24px;
+      animation: floatUp 7s infinite ease-in;
+      opacity: 0.8;
+    }
+
+    .heart:nth-child(1) { color: red; left: 5%; animation-delay: 0s; }
+    .heart:nth-child(2) { color: #ff69b4; left: 15%; animation-delay: 1s; }
+    .heart:nth-child(3) { color: #ff1493; left: 25%; animation-delay: 2s; }
+    .heart:nth-child(4) { color: #ffa500; left: 35%; animation-delay: 3s; }
+    .heart:nth-child(5) { color: #800080; left: 45%; animation-delay: 1.5s; }
+    .heart:nth-child(6) { color: #1e90ff; left: 55%; animation-delay: 2.5s; }
+    .heart:nth-child(7) { color: #ff6347; left: 65%; animation-delay: 3.5s; }
+    .heart:nth-child(8) { color: #ff00ff; left: 75%; animation-delay: 4s; }
+    .heart:nth-child(9) { color: #ffc0cb; left: 85%; animation-delay: 5s; }
+    .heart:nth-child(10) { color: #ff0000; left: 95%; animation-delay: 6s; }
+
+    @keyframes floatUp {
+      0% {
+        bottom: 0;
+        opacity: 0.8;
+        transform: translateY(0) scale(1);
+      }
+      100% {
+        bottom: 100%;
+        opacity: 0;
+        transform: translateY(-100px) scale(1.5);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Romantic Music -->
+  <audio id="bgMusic" loop>
+    <source src="Kadhi-Tu.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Open Letter Button -->
+  <button onclick="showLoveLetter()">💌 Click to Open Love Letter</button>
+
+  <!-- Love Letter Content -->
+  <div class="container" id="loveLetter">
+    <h1>To My Forever Love ❤️</h1>
+    <p>
+      My love,<br><br>
+      <p style="font-size: 22px; color: #c2185b; line-height: 1.9; animation: fadeInUp 3s ease-in-out;">
+  <span style="display: inline-block; transform: scale(1.05); color: #ad1457;">Every moment with you</span> is like a 
+  <span style="color: #ec407a; font-weight: bold;">melody sung by the heart</span>. Your smile brightens every shadow in my life, 
+  your laughter is my favorite rhythm, and your love — it's the most precious gift I've ever received.<br><br>
+
+  Before you, I never truly believed in soulmates. But then you came along, and suddenly, everything made sense. 
+  <span style="color: #d81b60;">You're the one I want to laugh with endlessly</span>, dream with fearlessly, and grow old with gracefully. 
+  <span style="font-weight: bold; color: #c2185b;">You are not just in my heart — you are my heart.</span><br><br>
+
+  <span style="color: #880e4f;">I can't stop thinking about the 2nd of October</span> — the day we'll be together again. I imagine holding your hand, 
+  looking into your eyes, and kissing you softly while we watch <em>Sanam Teri Kasam</em> — the most romantic movie for the most beautiful girl. 
+  Between <strong>8:30 to 9:00 PM</strong>, I want nothing else but to sit beside you, in the quiet, with love in our hearts and stars in our eyes.<br><br>
+
+  Thank you for being you — for loving me in ways I never knew I needed. I promise to cherish you more than words, 
+  care for you more than actions, and love you more with every breath, every beat, every second.<br><br>
+
+  <span style="font-size: 26px; font-weight: bold; color: #e91e63;">Forever and Always Yours,</span><br>
+  <span style="font-size: 24px; color: #f06292;">💖 Atharva</span>
+    </p>
+    <img src="GF Image .jpg" alt="Us Together">
+    <!-- 🔁 Replace 'GF.jpg' with actual image file name or online URL -->
+  </div>
+
+  <!-- Flying Hearts Animation -->
+  <div class="hearts">
+    <div class="heart">❤️</div>
+    <div class="heart">💗</div>
+    <div class="heart">💖</div>
+    <div class="heart">🧡</div>
+    <div class="heart">💜</div>
+    <div class="heart">💙</div>
+    <div class="heart">💛</div>
+    <div class="heart">💘</div>
+    <div class="heart">💞</div>
+    <div class="heart">❤️</div>
+  </div>
+
+  <!-- JS to Show Letter and Play Music -->
+  <script>
+    function showLoveLetter() {
+      document.getElementById("loveLetter").style.display = "block";
+      document.getElementById("bgMusic").play();
+    }
+  </script>
+
+</body>
+</html>
